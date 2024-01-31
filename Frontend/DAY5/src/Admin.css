@@ -1,0 +1,50 @@
+/* Admin.css */
+.ad{
+  background-image:url("6.jpg");
+  background-size: cover;
+  width: 317%;
+  height: 100vh;
+  /* background-color: aqua; */
+  margin-top: -32px;
+  margin-left: -14cm;
+}
+
+.admin-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: radial-gradient(circle, #92a8d1, #034f84);
+    height: 15cm; /* Radial gradient with different colors */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Set the desired height */
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input,
+  select {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
