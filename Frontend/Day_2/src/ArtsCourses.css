@@ -1,0 +1,86 @@
+/* ArtsCourses.css */
+
+.arts-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-shadow: 0.5px 0.5px;
+}
+
+.arts-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.arts-table {
+  width: 80%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.arts-table th, .arts-table td {
+  border: 2px solid #ddd;
+  padding: 16px;
+  text-align: left;
+}
+
+.arts-table th {
+  background-color: gray;
+  color: yellow;
+}
+
+.arts-table th:first-child,
+.arts-table td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.arts-table th:nth-child(2),
+.arts-table td:nth-child(2) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.arts-table th:last-child,
+.arts-table td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.arts-button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arts-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.no-seats {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .arts-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .arts-table th, .arts-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .arts-table th {
+    text-align: center;
+  }
+}
