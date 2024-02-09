@@ -1,0 +1,33 @@
+package com.table.course.Services;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.table.course.Entity.Courses;
+import com.table.course.Repo.CourseRepo;
+
+
+@Service
+public class ApplyServices {
+@Autowired
+public ApplyFormRepo employeeRepo;
+public boolean addEmployee(ApplyForn employee)
+{
+return employeeRepo.save(employee)!=null?true:false;
+}
+public List <ApplyForm> getAllEmployees()
+{
+return employeeRepo.findAll();
+}
+
+public String deleteCart(int id) {
+	employeeRepo.deleteById(id);
+	return "Delete the item "+id;
+}
+}
+
+
+
