@@ -1,0 +1,94 @@
+/* Engineering.css */
+.names{
+  margin-left:-35vw;
+  margin-top:-5vh;
+  padding-top: 40px;
+  padding-left: 200px;
+  background-color:gray ;
+  width:100vw;
+  height: 100vh;
+  box-shadow: 100px 100px;
+  text-shadow: .5px .5px;
+}
+.engineering-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%; /* Ensure at least 100% of the viewport height */
+}
+
+.engineering-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.engineering-table {
+  width: 80%; /* Adjust the width as needed */
+  height: 100%;
+  max-width: 1200px; /* Set a maximum width for the table */
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.engineering-table th, .engineering-table td {
+  border: 2px solid #ddd;
+  border-color: orange;
+  padding: 16px;
+  text-align: left;
+}
+
+.engineering-table th {
+  background-color:grey;
+  color: yellow;
+}
+
+/* Apply different border-radius to specific cells */
+.engineering-table th:first-child,
+.engineering-table td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.engineering-table th:nth-child(2),
+.engineering-table td:nth-child(2) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.engineering-table th:last-child,
+.engineering-table td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.engineering-button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.engineering-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .engineering-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .engineering-table th, .engineering-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .engineering-table th {
+    text-align: center;
+  }
+}
