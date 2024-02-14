@@ -22,6 +22,9 @@ public List <Courses> getAllEmployees()
 {
 return employeeRepo.findAll();
 }
+public Courses updateDetails(Courses e) {
+    return employeeRepo.saveAndFlush(e);
+}
 
 public String deleteCart(int id) {
 	employeeRepo.deleteById(id);
